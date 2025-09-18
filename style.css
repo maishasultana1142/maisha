@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 60px 20px;
+}
+
+header h1 span {
+  color: #ffe600;
+}
+
+.skills, .projects, .contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills h2,
+.projects h2,
+.contact h2 {
+  margin-bottom: 20px;
+  color: #4e54c8;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #ffffff;
+  border: 2px solid #4e54c8;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.skill:hover {
+  background: #4e54c8;
+  color: white;
+  transform: scale(1.05);
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.contact a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background: #4e54c8;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-list {
+    flex-direction: column;
+  }
+}
+
